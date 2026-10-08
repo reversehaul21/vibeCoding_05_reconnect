@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Re:Connect - 동창회 초대장</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트: 우아한 명조체와 깔끔한 고딕체 혼합 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="invitation-container">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content fade-in">
+                <p class="hero-date">2032. 10. 1</p>
+                <h1 class="title">Re:Connect</h1>
+                <p class="subtitle">세월이 흘러도 변하지 않는<br>우리들의 이야기</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <section class="content fade-in">
+            <div class="decorative-line"></div>
+            <p class="greeting">
+                강의실과 교정을 함께 누비며<br>웃고 울던 그때의 소중한 추억을<br>기억하시나요?<br><br>
+                오랜만에 흩어져 있던 반가운 얼굴들이<br>한자리에 모여 서로의 근황을 나누고자 합니다.<br><br>맛있는 음식과 즐거운 이야기가 준비되어 있으니<br>부담 없이 오셔서 자리를 빛내주세요.
+            </p>
+            <div class="decorative-line"></div>
+        </section>
+
+        <!-- Photo Section -->
+        <section class="photo-section fade-in">
+            <h2 class="section-title">Memory Lane</h2>
+            <p class="section-subtitle">우리의 소중한 순간들</p>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="pictures/입학.jpg" alt="입학" class="slide active">
+                    <img src="pictures/봄소풍.jpg" alt="봄소풍" class="slide">
+                    <img src="pictures/장기자랑.jpg" alt="장기자랑" class="slide">
+                    <img src="pictures/졸업.jpg" alt="졸업" class="slide">
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section fade-in">
+            <h2 class="section-title">Save the Date</h2>
+            <div class="event-date-box">
+                <p class="date-text">2032년 10월 1일 토요일 오후 5시</p>
+            </div>
+            <div id="countdown" class="countdown">
+                <div class="time-box"><span id="days">00</span><span class="label">Days</span></div>
+                <div class="time-box"><span id="hours">00</span><span class="label">Hours</span></div>
+                <div class="time-box"><span id="minutes">00</span><span class="label">Mins</span></div>
+                <div class="time-box"><span id="seconds">00</span><span class="label">Secs</span></div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section fade-in">
+            <h2 class="section-title">Location</h2>
+            <p class="location-name">창경궁</p>
+            <p class="location-desc">아름다운 고궁에서 만나요</p>
+            <div class="map-container">
+                <a href="https://map.naver.com/v5/search/창경궁" target="_blank" class="map-link">
+                    <div class="map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 15px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>네이버 지도로 길찾기</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>We wait for you.</p>
+            <p class="footer-copy">© 2032 Re:Connect</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

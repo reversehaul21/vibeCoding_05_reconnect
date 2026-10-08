@@ -1,0 +1,276 @@
+/* Elegant WordPress Theme Style (e.g. Astra Event / Divi Wedding) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fcfbf9; /* Soft warm white */
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 폰트 믹스: 제목은 명조, 본문은 고딕 */
+h1, h2, .hero-date, .greeting, .date-text, .location-name {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.invitation-container {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 450px;
+    background: url('pictures/입학.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 40px 30px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.hero-date {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #f3e5ab; /* Soft gold */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0.95;
+}
+
+/* Content & Typography */
+.content {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.decorative-line {
+    width: 1px;
+    height: 40px;
+    background-color: #d4af37; /* Gold */
+    margin: 0 auto 30px;
+}
+
+.content .decorative-line:last-child {
+    margin: 30px auto 0;
+}
+
+.greeting {
+    line-height: 2.2;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Photo Section */
+.photo-section {
+    padding: 40px 20px 60px;
+    background: #fdfdfd;
+}
+
+.slider-container {
+    width: 100%;
+    height: 400px; /* Taller for premium feel */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    border: 8px solid #fff;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Countdown Section */
+.countdown-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f6f0; /* Very light warm beige */
+}
+
+.event-date-box {
+    margin-bottom: 30px;
+}
+
+.date-text {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-box {
+    background: transparent;
+    border: none;
+    padding: 10px 5px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-box span:first-child {
+    font-size: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.time-box .label {
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Map Section */
+.map-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.location-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #2c2c2c;
+}
+
+.location-desc {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+
+.map-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+}
+
+.map-placeholder:hover {
+    background: #f0f0f0;
+}
+
+.map-placeholder span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2c2c2c;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer .footer-copy {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    color: #888;
+}
